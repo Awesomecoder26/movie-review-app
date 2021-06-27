@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/* #movies-searchable {
+  width: 1500px;
+} */
+
+body {
+  text-align: center;
+  background-color: WhiteSmoke;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    margin: 0 auto;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.4vh 1.4vh;
+    /* width: 1000px; */
+  }
+}
+/* .review-section {
+} */
+
+.movie-poster {
+  width: 21vw;
+  /* height: 450px; */
+  height: 60.9vh;
+  /* transition: all 0.2s ease-in-out; */
+  transition: box-shadow 0.3s;
+  /* border-radius: 5px; */
+  border-radius: 0.313rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .movie-poster {
+    width: 300px;
+    height: 450px;
+    /* transition: all 0.2s ease-in-out; */
+    transition: box-shadow 0.3s;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+.movie-poster:hover {
+  /* transform: scale(1.1); */
+  /* box-shadow: 0 0 20px rgba(33, 33, 33, 0.2); */
+  box-shadow: 0 0 2.5rem rgba(32, 32, 32, 8);
+}
+
+.title {
+  /* text-align: center; */
+  color: red;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.5rem;
+}
+
+.description {
+  font-size: 1.5rem;
+  color: red;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.form-group {
+  margin: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  #inputValue {
+    width: 5%;
+    -webkit-transition: width 0.35s ease-in-out;
+    transition: width 0.35s ease-in-out;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0.125rem solid red;
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #inputValue {
+    width: 80%;
+    -webkit-transition: width 0.35s ease-in-out;
+    transition: width 0.35s ease-in-out;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0.125rem solid red;
+    outline: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #inputValue[type="text"]:focus {
+    width: 30%;
+  }
+}
+
+#search {
+  border: none;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+#movies-searchable {
+  margin-top: 5rem;
+}
+
+/* .average-rating {
+  font-family: "Barlow Condensed", sans-serif;
+  color: red;
+  font-size: 1.5rem;
+  border: 1px solid;
+  width: 200px;
+  margin: 0 auto;
+  font-style: bold;
+  border-radius: 5px;
+} */
+
+.des {
+  font-family: "Shadows Into Light", cursive;
+  color: red;
+  font-size: 1.5rem;
+}
+
+.row {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  /* width: 95vw; */
+  width: 95vw;
+  height: fit-content;
+  background-color: white;
+  /* border-radius: 5px; */
+  border-radius: 0.313rem;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    /* width: 95vw; */
+    width: 90vw;
+    height: fit-content;
+    background-color: white;
+    border-radius: 0.313rem;
+  }
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* .review {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* width: 100%;
+  text-align: center; */
+/* } */
+
+.profile-pic {
+  /* width: 70px; */
+  width: 4.375rem;
+}
+
+.average-review-rating {
+  text-align: center;
+  font-size: 2rem;
+  color: red;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .average-review-rating {
+    text-align: center;
+    font-size: 1.3rem;
+    color: red;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+}
+
+.no-reviews {
+  text-align: center;
+  position: absolute;
+  left: 43%;
+  font-size: 2rem;
+  color: red;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .no-reviews {
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    font-size: 1rem;
+    color: red;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+}
+
+.review-content {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: left;
+}
+
+.content {
+  text-align: justify;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    text-align: justify;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+.author-rating {
+  color: red;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .author-rating {
+    color: red;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.8rem;
+  }
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1.5rem;
+  padding: 1rem;
+  /* width: 50vw; */
+  /* max-width: 200px; */
+  max-width: 13.9vw;
+  /* height: fit-content;
+  background-color: #b8b8b8; */
+}
+
+@media screen and (max-width: 768px) {
+  .author-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-left: 0.5rem;
+    padding: 1rem;
+    /* width: 50vw; */
+    max-width: 100px;
+    /* height: fit-content;
+  /* background-color: #b8b8b8; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-pic {
+    border-radius: 50%;
+    width: 20px;
+  }
+}
+.author {
+  font-family: "Nunito Sans", sans-serif;
+  width: 150px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .author {
+    font-family: "Nunito Sans", sans-serif;
+    width: 150px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0.6rem;
+  }
+}
+
+.created-at {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .created-at {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 0.6rem;
+  }
+}
+
+.num-reviews {
+  color: red;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .num-reviews {
+    color: red;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1rem;
+    display: block;
+  }
+}
