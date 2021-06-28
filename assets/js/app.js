@@ -1,4 +1,4 @@
-const API_KEY = SECRET_API_KEY;
+const API_KEY = process.env.SECRET_API_KEY;
 
 const IMAGE_URL = "https://image.tmdb.org/t/p/w500";
 
