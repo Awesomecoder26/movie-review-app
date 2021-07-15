@@ -4,5 +4,6 @@ This Movie/TV Show Review App fetches data from the TheMovieDatabase API and dis
 
 This App was built in HTML, CSS and Javascript.
 
+Project link:
 https://movie-review-site.netlify.app/
 
