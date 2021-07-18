@@ -7,10 +7,10 @@
 <p float="left" align="center">
  
 
-  <img src="https://user-images.githubusercontent.com/31895990/125774409-09a1461e-5a78-429d-8910-d99713ae463b.png" width="460"/>
+  <img src="https://user-images.githubusercontent.com/31895990/125774409-09a1461e-5a78-429d-8910-d99713ae463b.png" width="480"/>
   
 
-  <img src="https://user-images.githubusercontent.com/31895990/125788251-fc983923-a242-48af-9a6a-123f166dc609.png" width="460"/>
+  <img src="https://user-images.githubusercontent.com/31895990/125788251-fc983923-a242-48af-9a6a-123f166dc609.png" width="480"/>
 </p>
   
 </br>
